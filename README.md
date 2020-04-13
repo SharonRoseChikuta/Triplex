@@ -20,4 +20,4 @@ We have declared three constant variables. We have declared a constant variable 
 We have added expression to the notify the player of the hints.
 
 
-Code is conforming to Unreal Coding Standards as listed on their website. They suggest using CamelCase intead of snake_case
+Code is conforming to Unreal Coding Standards as listed on their website. They suggest using UperCamelCase intead of snake_case

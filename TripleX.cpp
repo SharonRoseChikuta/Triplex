@@ -20,9 +20,11 @@ int main ()
 
     //print sum and product to terminal 
     cout << "*** There are 3 numbers in the code." << endl;
-    cout << "*** The codes add up to " << codeSum << endl;
-    cout << "*** The codes multiple out to give " << codeProduct << endl << endl;
+    cout << "*** The codes add up to: " << codeSum << endl;
+    cout << "*** The codes multiple out to give: " << codeProduct << endl << endl;
 
+    int PlayerGuess;
+    
     return 0; 
 }
 
