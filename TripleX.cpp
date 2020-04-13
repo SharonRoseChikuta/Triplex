@@ -18,9 +18,9 @@ int main ()
     const int product = a * b * c;
 
     //print sum and product to terminal 
-   cout << "There are 3 numbers in the code." << endl;
-    cout << "The codes add up to " sum << endl;
-    cout << "The codes multiple out to " product << endl;
+    cout << "There are 3 numbers in the code." << endl;
+    cout << "The codes add up to " << sum << endl;
+    cout << "The codes multiple out to " << product << endl;
 
     return 0; 
 }
