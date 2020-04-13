@@ -5,7 +5,8 @@ using namespace std;
 int main ()
 {
     //Print welcome messages to the terminal.
-    cout << endl << endl<< "Congrats Assasin, you have been assigned a case! You need to break into Cyclop's lair and kill him in his sleep." <<endl;
+    cout << endl << endl<< "Congrats Assasin, you have been assigned a case!" <<endl;
+    cout << "You need to break into Cyclop's lair and kill him in his sleep." <<endl;
     cout << "Enter the correct codes to his lair before the alram sets off, alerting the guards." << endl << endl << endl;
 
  
