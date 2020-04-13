@@ -9,7 +9,7 @@ int main ()
     cout << "You need to break into the Cyclop's lair and kill him in his sleep." <<endl;
     cout << "Enter the correct codes to his lair before the alram sets off, alerting his bandits." << endl << endl << endl;
 
- 
+
     //Declare 3 number code
     const int CodeA = 4;
     const int CodeB = 3;
