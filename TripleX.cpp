@@ -7,7 +7,7 @@ int main ()
     //Print welcome messages to the terminal.
     cout << endl<< "Congrats Assasin, you have been assigned a case!" <<endl;
     cout << "You need to break into the Cyclop's lair and kill him in his sleep." <<endl;
-    cout << "Enter the correct codes to his lair before the alram sets off, alerting the bandits." << endl << endl << endl;
+    cout << "Enter the correct codes to his lair before the alram sets off, alerting his bandits." << endl << endl << endl;
 
  
     //Declare 3 number code
@@ -53,5 +53,6 @@ int main ()
  /* 
      printf (" You need to enter the correct codes to continue!");
      std:: cout << std:: endl;
+   
 
 */

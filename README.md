@@ -41,4 +41,11 @@ For the second progress shot (02triplexprogressshot )this is what has been accom
     After retrieving guesses we can check if the sum and product of those guesses equal our correct input. 
     After evaluating the if else, the player is able to know if they have won or lost the game.
 
+Journal/ Random Thoughts:  12 April 2020
 
+   Alt Game version ideas:
+        Assasins because I have been playing Assasin's Creed a lot lately
+        Deactvating or Activating a bomb
+
+
+    Maybe one day  can figure out how to add visuals to the game.
