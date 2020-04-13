@@ -7,24 +7,46 @@ int main ()
     //Print welcome messages to the terminal.
     cout << endl<< "Congrats Assasin, you have been assigned a case!" <<endl;
     cout << "You need to break into the Cyclop's lair and kill him in his sleep." <<endl;
-    cout << "Enter the correct codes to his lair before the alram sets off, alerting the guards." << endl << endl << endl;
+    cout << "Enter the correct codes to his lair before the alram sets off, alerting the bandits." << endl << endl << endl;
 
  
     //Declare 3 number code
-    const int codeA = 4;
-    const int codeB = 3;
-    const  int codeC = 2; 
+    const int CodeA = 4;
+    const int CodeB = 3;
+    const  int CodeC = 2; 
 
-    const int codeSum = codeA + codeB + codeC;
-    const int codepProduct = codeA * codeB * codeC;
+    const int CodeSum = CodeA + CodeB + CodeC;
+    const int CodeProduct = CodeA * CodeB * CodeC;
 
     //print sum and product to terminal 
     cout << "*** There are 3 numbers in the code." << endl;
-    cout << "*** The codes add up to: " << codeSum << endl;
-    cout << "*** The codes multiple out to give: " << codeProduct << endl << endl;
+    cout << "*** The codes add up to: " << CodeSum << endl;
+    cout << "*** The codes multiple out to give: " << CodeProduct << endl << endl;
 
-    int PlayerGuess;
-    
+    //initialize guesses
+    int GuessA, GuessB, GuessC;
+
+    //store players guess from terminal
+    cin >> GuessA >> GuessB >> GuessC;
+   // cout << "You guessed: " << GuessA << GuessB <<  GuessC << endl << endl;
+
+    int GuessSum = GuessA + GuessB + GuessC;
+    int  GuessProduct = GuessA * GuessB * GuessC;
+
+    //check if player guess is correct
+    if (GuessSum == CodeSum && GuessProduct == CodeProduct)
+    {
+    //if this statement returns false it will skip the code and move on to the next line 
+    cout << "You're in, goodluck!" << endl << endl;
+    }
+    else 
+    {
+        //how can I change the code so that the guesses are limited, like "You have three tries left!"
+        cout << "You have failed. The bandits are coming, run!" <<endl << endl;
+    }
+
+
+
     return 0; 
 }
 

@@ -21,3 +21,15 @@ We have added expression to the notify the player of the hints.
 
 
 Code is conforming to Unreal Coding Standards as listed on their website. They suggest using UperCamelCase intead of snake_case
+
+
+When reading in player guesses at first we had a glitch.  If you enter something that isn’t an integer, it will convert the letter or character to a zero.
+then the code freezes until you rest cin.
+
+For replayability we will fix the bug later. 
+
+We want the player to only enter numbers. 
+The player can now insert the numbers 
+    seperated by spaces or 
+    on seperate lines.
+
