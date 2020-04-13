@@ -11,13 +11,13 @@ Starts pretty easy and becomes harder
 
 
 
-For the first progress shot (01triplexprogressshot. )this is what has been accomplished. We had to post our progress on the community forum on GameDev.tv
+For the first progress shot (01triplexprogressshot )this is what has been accomplished. We had to post our progress on the community forum on GameDev.tv
 
-Here is a screenshot of the TripleX game this far.
+    Here is a screenshot of the TripleX game this far.
 
-So far we have printed the expression to welcome the player and explain the objective.
-We have declared three constant variables. We have declared a constant variable for their sum and another constant variable for their products.
-We have added expression to the notify the player of the hints.
+    So far we have printed the expression to welcome the player and explain the objective.
+    We have declared three constant variables. We have declared a constant variable for their sum and another constant variable for their products.
+    We have added expression to the notify the player of the hints.
 
 
 Code is conforming to Unreal Coding Standards as listed on their website. They suggest using UperCamelCase intead of snake_case
@@ -32,4 +32,13 @@ We want the player to only enter numbers.
 The player can now insert the numbers 
     seperated by spaces or 
     on seperate lines.
+
+For the second progress shot (02triplexprogressshot )this is what has been accomplished. We had to post our progress on the community forum on GameDev.tv
+
+    So far since the last progress check we have:
+    Initialized variables for the players' guess.
+    Been able to retrieve guesses from the player using the extraction operator. 
+    After retrieving guesses we can check if the sum and product of those guesses equal our correct input. 
+    After evaluating the if else, the player is able to know if they have won or lost the game.
+
 
