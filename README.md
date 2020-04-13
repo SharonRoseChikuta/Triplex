@@ -18,3 +18,6 @@ Here is a screenshot of the TripleX game this far.
 So far we have printed the expression to welcome the player and explain the objective.
 We have declared three constant variables. We have declared a constant variable for their sum and another constant variable for their products.
 We have added expression to the notify the player of the hints.
+
+
+Code is conforming to Unreal Coding Standards as listed on their website. They suggest using CamelCase intead of snake_case
