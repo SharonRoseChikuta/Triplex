@@ -1,6 +1,16 @@
 # Triplex
 C++ game
 
+Triple X Game Design Doc (GDD)
+
+Simple number puzzle game
+Hacking into a computer lock
+Find valid combination of locks (three variables)
+Player is given hints at the start of the game
+Starts pretty easy and becomes harder
+
+
+
 For the first progress shot (01triplexprogressshot. )this is what has been accomplished. We had to post our progress on the community forum on GameDev.tv
 
 Here is a screenshot of the TripleX game this far.
