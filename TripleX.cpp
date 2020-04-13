@@ -28,7 +28,7 @@ int main ()
 
     //store players guess from terminal
     cin >> GuessA >> GuessB >> GuessC;
-   // cout << "You guessed: " << GuessA << GuessB <<  GuessC << endl << endl;
+   
 
     int GuessSum = GuessA + GuessB + GuessC;
     int  GuessProduct = GuessA * GuessB * GuessC;
@@ -53,6 +53,7 @@ int main ()
  /* 
      printf (" You need to enter the correct codes to continue!");
      std:: cout << std:: endl;
+     // cout << "You guessed: " << GuessA << GuessB <<  GuessC << endl << endl;
    
 
 */
