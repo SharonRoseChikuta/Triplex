@@ -2,17 +2,22 @@
 #include <iostream>
 using namespace std;
 
+void PrintIntroduction ()
+
+{
+    cout << endl<< "Congrats Assasin, you have been assigned a case! \n";
+    cout << "You need to break into the Cyclop's lair and kill him in his sleep \n";
+    cout << "Enter the correct codes to his lair before the alram sets off, alerting his bandits.\n\n\n" ;
+}
 
 void PlayGame ()
 
 {
 
+PrintIntroduction();
+
 //Print welcome messages to the terminal.
-    cout << endl<< "Congrats Assasin, you have been assigned a case! \n";
-    cout << "You need to break into the Cyclop's lair and kill him in his sleep \n";
-    cout << "Enter the correct codes to his lair before the alram sets off, alerting his bandits.\n\n\n" ;
-
-
+    
     //Declare 3 number code
     const int CodeA = 4;
     const int CodeB = 3;
@@ -47,8 +52,6 @@ void PlayGame ()
         //how can I change the code so that the guesses are limited, like "You have three tries left!"
         cout << "You have failed. The bandits are coming, run!!! \n";
     }
-
-
 
 }
 
