@@ -3,15 +3,13 @@
 using namespace std;
 
 void PrintIntroduction ()
-
 {
-    cout << endl<< "Congrats Assasin, you have been assigned a case! \n";
+    cout << "\n\nCongrats Assasin, you have been assigned a case! \n";
     cout << "You need to break into the Cyclop's lair and kill him in his sleep \n";
     cout << "Enter the correct codes to his lair before the alram sets off, alerting his bandits.\n\n\n" ;
 }
 
-void PlayGame ()
-
+bool PlayGame ()
 {
 
 PrintIntroduction();
@@ -44,13 +42,16 @@ PrintIntroduction();
     //check if player guess is correct
     if (GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
-    //if this statement returns false it will skip the code and move on to the next line 
-    cout << "You're in, goodluck! \n" ;
+        //if this statement returns false it will skip the code and move on to the next line 
+        cout << "You're in, goodluck! \n" ;
+        return true;
+
     }
     else 
     {
         //how can I change the code so that the guesses are limited, like "You have three tries left!"
         cout << "You have failed. The bandits are coming, run!!! \n";
+        return false; 
     }
 
 }
@@ -59,8 +60,15 @@ PrintIntroduction();
 
 int main ()
 {
-    
-    PlayGame(); 
+    while(true){
+
+        bool blevelComplete = PlayGame();
+       
+        cin.clear(); //clears any errors
+        cin.ignore(); //discards the buffer
+    }
+     
+
     return 0; 
 }
 
