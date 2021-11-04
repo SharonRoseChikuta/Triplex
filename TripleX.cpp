@@ -60,12 +60,21 @@ PrintIntroduction();
 
 int main ()
 {
+    int LevelDifficulty = 1;
+
     while(true){
 
-        bool blevelComplete = PlayGame();
+        bool bLevelComplete = PlayGame();
        
         cin.clear(); //clears any errors
         cin.ignore(); //discards the buffer
+
+        if (bLevelComplete)
+        {
+            //increase the level difficulty
+            ++LevelDifficulty; //take the level dificulty and increase by one
+        }
+        
     }
      
 
