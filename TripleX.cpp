@@ -17,9 +17,9 @@ PrintIntroduction(difficulty);
 //Print welcome messages to the terminal.
     
     //Declare 3 number code
-    const int CodeA = rand();
-    const int CodeB = rand();
-    const  int CodeC = rand(); 
+    const int CodeA = rand() % 4;
+    const int CodeB = rand() % 4;
+    const  int CodeC = rand() % 4; 
 
     const int CodeSum = CodeA + CodeB + CodeC;
     const int CodeProduct = CodeA * CodeB * CodeC;
@@ -66,8 +66,7 @@ int main ()
     while (LevelDifficulty <= MaxDifficulty) //will loop game until al levels are completed
     {
 
-        cout 
-        /*
+        
         bool bLevelComplete = PlayGame(LevelDifficulty);
        
         cin.clear(); //clears any errors
@@ -78,7 +77,7 @@ int main ()
             //increase the level difficulty
             ++LevelDifficulty; //take the level dificulty and increase by one
         }
-        */
+    
         
     }
      
