@@ -66,6 +66,8 @@ int main ()
     while (LevelDifficulty <= MaxDifficulty) //will loop game until al levels are completed
     {
 
+        cout 
+        /*
         bool bLevelComplete = PlayGame(LevelDifficulty);
        
         cin.clear(); //clears any errors
@@ -76,6 +78,7 @@ int main ()
             //increase the level difficulty
             ++LevelDifficulty; //take the level dificulty and increase by one
         }
+        */
         
     }
      
