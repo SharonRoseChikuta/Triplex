@@ -2,24 +2,24 @@
 #include <iostream>
 using namespace std;
 
-void PrintIntroduction ()
+void PrintIntroduction (int difficulty)
 {
-    cout << "\n\nCongrats Assasin, you have been assigned a case! \n";
+    cout << "\n\nCongrats Assasin, you have been assigned a level "  << difficulty << " case! \n";
     cout << "You need to break into the Cyclop's lair and kill him in his sleep \n";
     cout << "Enter the correct codes to his lair before the alram sets off, alerting his bandits.\n\n\n" ;
 }
 
-bool PlayGame ()
+bool PlayGame (int difficulty)
 {
 
-PrintIntroduction();
+PrintIntroduction(difficulty);
 
 //Print welcome messages to the terminal.
     
     //Declare 3 number code
-    const int CodeA = 4;
-    const int CodeB = 3;
-    const  int CodeC = 2; 
+    const int CodeA = rand();
+    const int CodeB = rand();
+    const  int CodeC = rand(); 
 
     const int CodeSum = CodeA + CodeB + CodeC;
     const int CodeProduct = CodeA * CodeB * CodeC;
@@ -43,14 +43,14 @@ PrintIntroduction();
     if (GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
         //if this statement returns false it will skip the code and move on to the next line 
-        cout << "You're in, goodluck! \n" ;
+        cout << "***You're in, goodluck! Keep going! ***\n" ;
         return true;
 
     }
     else 
     {
         //how can I change the code so that the guesses are limited, like "You have three tries left!"
-        cout << "You have failed. The bandits are coming, run!!! \n";
+        cout << " *** You have failed. The bandits are coming, try again!!! *** \n";
         return false; 
     }
 
@@ -61,10 +61,12 @@ PrintIntroduction();
 int main ()
 {
     int LevelDifficulty = 1;
+    const int MaxDifficulty = 5;
 
-    while(true){
+    while (LevelDifficulty <= MaxDifficulty) //will loop game until al levels are completed
+    {
 
-        bool bLevelComplete = PlayGame();
+        bool bLevelComplete = PlayGame(LevelDifficulty);
        
         cin.clear(); //clears any errors
         cin.ignore(); //discards the buffer
@@ -77,6 +79,7 @@ int main ()
         
     }
      
+    cout << "***Congrats mate, you are free!!***";
 
     return 0; 
 }
