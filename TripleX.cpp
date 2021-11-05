@@ -17,9 +17,9 @@ PrintIntroduction(difficulty);
 //Print welcome messages to the terminal.
     
     //Declare 3 number code
-    const int CodeA = rand() % 4;
-    const int CodeB = rand() % 4;
-    const  int CodeC = rand() % 4; 
+    const int CodeA = rand() % difficulty +1 ;
+    const int CodeB = rand() % difficulty +1;
+    const  int CodeC = rand() % difficulty +1; 
 
     const int CodeSum = CodeA + CodeB + CodeC;
     const int CodeProduct = CodeA * CodeB * CodeC;
