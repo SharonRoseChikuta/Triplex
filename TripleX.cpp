@@ -1,5 +1,7 @@
 
 #include <iostream>
+#include <ctime>
+
 using namespace std;
 
 void PrintIntroduction (int difficulty)
@@ -17,9 +19,9 @@ PrintIntroduction(difficulty);
 //Print welcome messages to the terminal.
     
     //Declare 3 number code
-    const int CodeA = rand() % difficulty +1 ;
-    const int CodeB = rand() % difficulty +1;
-    const  int CodeC = rand() % difficulty +1; 
+    const int CodeA = rand() % difficulty + difficulty ;
+    const int CodeB = rand() % difficulty + difficulty;
+    const  int CodeC = rand() % difficulty + difficulty; 
 
     const int CodeSum = CodeA + CodeB + CodeC;
     const int CodeProduct = CodeA * CodeB * CodeC;
@@ -60,6 +62,9 @@ PrintIntroduction(difficulty);
 
 int main ()
 {
+
+    srand(time(NULL)); //Create new random sequence based on time of day
+
     int LevelDifficulty = 1;
     const int MaxDifficulty = 5;
 
